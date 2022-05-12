@@ -1,0 +1,915 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #3366ff;
+    padding: 14px 200px;
+    color: white;
+    z-index: 99;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h2 {
+    font-size: 24px;
+}
+.navbar h6 {
+    font-size: 0.7rem;
+}
+
+.baniere {
+    /* width: 100%;
+    background-image: url('/assets/img/shutterstock_1270048024.png');
+    background-position: center;
+    height: 750px;
+    padding: 200px; */
+    color: white;
+}
+.baniere img {
+    width: 100%;
+}
+.baniere .baniere-content {
+    width: 430px;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+.baniere-content .baniere-title {
+    font-size: 45px;
+    font-weight: 700;
+    font-family: sans-serif;
+    letter-spacing: normal;
+    margin-bottom: 40px;
+    line-height: 1.3;
+}
+.baniere-content .baniere-desc {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 8px 20px;
+    border-radius: 14px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 0.7;
+    box-shadow: 1px 1px 2px 1px #5e5d5d;
+    line-height: 1.4;
+}
+
+.button.yellow {
+    border: 1px solid #dfa612;
+    background-color: #dfa612;
+    margin-right: 8px;
+}
+.button.red {
+    border: 1px solid #e55449;
+    background-color: #e55449;
+}
+.button.blue {
+    border: 1px solid #3366ff;
+    background-color: #3366ff;
+    color: white;
+    padding: 10px 30px;
+    padding-left: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.button.white {
+    border: 1px solid white;
+    color: #3366ff;
+    background-color: white;
+    padding: 10px 30px;
+    padding-left: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.button.white img,
+.button.blue img {
+    width: 30px !important;
+    height: 30px;
+    margin: -5px -20px -5px -1px;
+}
+
+.branch-grid {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 2px grey;
+}
+.branch-grid-content {
+    display: flex;
+    align-items: center;
+}
+
+.branch-grid-content .branch-grid-item {
+    margin-right: 30px;
+}
+
+.branch-grid-item img {
+    max-height: 40px;
+}
+.branch-grid-item:first-child img {
+    height: 30px;
+}
+
+.scholarships {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0px 0px;
+    background: #f5f5f5;
+}
+
+.number-for-africa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.number-for-africa .title {
+    margin-bottom: 10px;
+}
+.number-for-africa .title h1 {
+    font-size: 45px;
+    font-weight: bolder;
+}
+.number-for-africa .content-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px;
+}
+.content-row .content-left {
+    flex: 1;
+    width: 360px;
+}
+.content-left img {
+    height: 300px;
+}
+.content-row .content-right {
+    width: 400px;
+    padding: 25px 0;
+}
+.content-right .content-top {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+.content-right .content-top a {
+    text-decoration: none;
+    color: #3366ff;
+}
+.content-right .content-bottom .title {
+    font-size: 37.4974px;
+    font-family: sans-serif;
+    color: #3366ff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.list .item {
+    display: flex;
+}
+.list .item img {
+    width: 8px;
+    margin-right: 15px;
+}
+.list .item p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.cursus {
+    width: 100%;
+    padding: 60px 100px;
+}
+.cursus .cursus-content {
+    display: flex;
+}
+.cursus-content .content-left {
+    flex: 0.6;
+    background: #3366ff;
+    color: white;
+    padding: 60px;
+    padding-right: 30px;
+}
+.cursus-content .content-left .title {
+    font-weight: 900;
+    font-size: 45px;
+    display: flex;
+    flex-direction: column;
+}
+.cursus-content .content-left .title span:first-child {
+    font-size: 132.264px;
+    font-family: sans-serif;
+    margin: -40px 0;
+}
+.cursus-content .content-left .title span:last-child {
+    margin-bottom: 20px;
+}
+.content-left .subtitle {
+    font-size: 20.4531px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.cursus-content .content-right {
+    flex: 0.5;
+    position: relative;
+}
+.cursus-content .content-right .logo-institut {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+}
+.cursus-content .content-right .image {
+    width: 100%;
+    /* max-height: 530px; */
+    height: 100%;
+}
+
+.branches {
+    margin-bottom: 25px;
+}
+.branches p {
+    margin: 0;
+    font-size: 13.6354px;
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
+.infos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 65px 15% 20px;
+}
+.infos .info-title {
+    font-size: 45px;
+    width: 570px;
+    text-align: center;
+    color: #3366ff;
+    margin-bottom: 60px;
+}
+.infos .info-blog {
+    display: flex;
+    gap: 30px;
+    z-index: 1;
+}
+.infos .back {
+    position: absolute;
+    width: calc(100% + 42px);
+    height: 300px;
+    background: #b6dffd;
+    bottom: -60px;
+    z-index: 0;
+    transform: rotate(5deg);
+}
+
+.info-blog .info-blog-left {
+    position: relative;
+}
+.info-blog .info-blog-left img {
+    width: 100%;
+}
+.info-blog-left .blog-desc {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+.info-blog-left .buttons {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+.info-blog-left .button {
+    height: 70px;
+    border-radius: 25px;
+}
+.info-blog .info-blog-right {
+    position: relative;
+}
+.info-blog .info-blog-right img {
+    width: 100%;
+}
+.info-blog .info-blog-right .blog-desc {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+.info-blog-right .buttons {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+.info-blog-right .button {
+    height: 70px;
+    border-radius: 25px;
+    max-width: 300px;
+    line-height: 1.4;
+}
+.scholarships .about {
+    background: white;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 100px 60px 80px;
+}
+.about .about-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.about .about-content .about-box-image {
+    width: 480px;
+    height: 370px;
+}
+.about-box-image img {
+    width: 100%;
+}
+.about .about-content .about-box {
+    width: 480px;
+    padding-left: 100px;
+    font-size: 12px;
+}
+.about .about-content:last-child .about-box {
+    padding-right: 60px;
+    padding-left: 0px;
+}
+.about .about-content:last-child .about-box h1 {
+    font-size: 30px;
+    margin: 0;
+}
+.about .about-content:last-child .about-box .about-subtitle {
+    margin-top: 10px;
+}
+.about-box .about-title h1 {
+    font-size: 37px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+.about-box .about-subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.about .about-desc h6 {
+    line-height: 2;
+    font-size: 14px;
+    font-weight: 600;
+}
+.about .about-desc p {
+    line-height: 2;
+}
+
+.about-tooshare {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 60px 20px;
+    width: 100%;
+}
+.about-tooshare h1 {
+    font-size: 37px;
+    font-weight: bold;
+    text-align: center;
+    color: #3366ff;
+    margin-bottom: 15px;
+}
+.about-tooshare-header .about-tooshare-subtitle {
+    font-size: 20px;
+    color: #3366ff;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-tooshare-desc {
+    max-width: 740px;
+    font-size: 12.5px;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.about-tooshare-image {
+    max-width: 740px;
+}
+.about-tooshare-image img {
+    width: 100%;
+}
+.footer {
+    background-color: #3366ff;
+    width: 100%;
+    padding: 60px;
+    color: white;
+}
+.footer .footer-content {
+    width: 940px;
+    margin: auto;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+}
+.footer-content .footer-content-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.footer-content-top .footer-content-item {
+    letter-spacing: 1.2px;
+}
+.footer-content-top .footer-content-item .footer-content-item-title {
+    font-weight: 600;
+    font-size: 20.5px;
+    margin-bottom: 15px;
+}
+.footer-content-item .footer-content-item-list {
+    line-height: 2;
+    letter-spacing: 1.2px;
+}
+.footer-content .footer-content-bottom {
+    display: flex;
+    border-top: 2px solid #ffffffb3;
+    padding-top: 20px;
+}
+.footer-content-bottom .copyright {
+    width: 80%;
+}
+.footer-content-bottom .content-right {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer-content-bottom .content-right p {
+    border-bottom: 1px solid #ffffffb3;
+}
+
+@media screen and (max-width: 974px) {
+    .baniere {
+        padding-top: 55px;
+        height: 690px;
+        width: 100%;
+    }
+    .baniere .baniere-content {
+        left: 50px;
+        top: 100px;
+        width: 62%;
+    }
+    .baniere-content .baniere-title {
+        font-size: 44px;
+        width: 65%;
+        margin-bottom: 50px;
+    }
+    .baniere-content .baniere-desc {
+        margin-bottom: 30px;
+        width: 40%;
+        line-height: 1.5;
+    }
+    .button.button.yellow,
+    .button.red {
+        padding: 8px 30px;
+    }
+    .baniere img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+    .number-for-africa .content-row {
+        padding: 30px 60px;
+    }
+    .content-row .content-left,
+    .content-row .content-right {
+        flex: 1;
+        padding: 0;
+    }
+    .content-left img {
+        width: 100%;
+        height: auto;
+    }
+    .content-row .content-right {
+        width: 100%;
+    }
+    .content-right .content-top {
+        font-size: 13.5px;
+        letter-spacing: 1.2px;
+        line-height: 1.9;
+    }
+    .list .item p {
+        line-height: 2;
+        letter-spacing: 1px;
+    }
+    .cursus {
+        padding: 60px;
+        padding-bottom: 0;
+    }
+    .cursus .cursus-content {
+        flex-direction: column;
+    }
+    .cursus-content .content-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cursus-content .content-left .title {
+        text-align: center;
+    }
+    .branches {
+        text-align: center;
+    }
+    .infos {
+        padding: 60px;
+    }
+    .info-blog-left .blog-desc {
+        font-size: 22px;
+    }
+    .info-blog-left .button {
+        font-size: 12px;
+        height: 55px;
+        border-radius: 20px;
+        max-width: 272px;
+    }
+    .info-blog-left .buttons .button img {
+        height: 20px !important;
+        width: 20px !important;
+        margin: 0 0 0 20px;
+    }
+    .info-blog .info-blog-right .blog-desc {
+        font-size: 22px;
+    }
+    .info-blog-right .button {
+        font-size: 12px;
+        height: 55px;
+        border-radius: 20px;
+        max-width: 260px;
+    }
+    .info-blog-right .buttons .button.white img {
+        height: 20px !important;
+        width: 20px !important;
+        margin: 0 0 0 20px;
+    }
+    .about .about-content .about-box-image {
+        flex: 0.8;
+        width: 50%;
+        height: inherit;
+    }
+    .about-box-image img {
+        height: 100%;
+        object-fit: none;
+    }
+    .about .about-content .about-box {
+        flex: 1;
+        padding-left: 40px;
+        width: 50% !important;
+    }
+    .about-box .about-title h1 {
+        font-size: 32px;
+    }
+    .about .about-desc p {
+        font-size: 12px;
+    }
+    .about .about-content:last-child .about-box {
+        flex: 1;
+    }
+    .about-tooshare-desc {
+        max-width: 475px;
+        line-height: 2;
+        font-size: 12px;
+    }
+    .about-tooshare-image {
+        text-align-last: center;
+    }
+    .about-tooshare-image img {
+        width: 600px;
+    }
+    .footer {
+        padding-bottom: 36px;
+    }
+    .footer .footer-content {
+        width: 100% !important;
+    }
+    .footer-content .footer-content-top {
+        column-gap: 130px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .footer-content .footer-content-bottom {
+        flex-direction: column-reverse;
+        row-gap: 25px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .content-right .content-top {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+    .content-right .content-bottom .title {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .list .item p {
+        line-height: 2;
+    }
+}
+@media screen and (max-width: 750px) {
+    .cursus .cursus-content .content-left .title span:first-child {
+        margin: -40px 0 -10px;
+    }
+    .footer-content .footer-content-top {
+        column-gap: 75px;
+    }
+    .content-right .content-top {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .content-right .content-bottom .title {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .list .item p {
+        line-height: 1.5;
+        font-size: 16px;
+    }
+    .baniere-content .baniere-title {
+        font-size: 36px;
+        width: 83%;
+    }
+    .baniere-content .baniere-desc {
+        width: 60%;
+    }
+    .number-for-africa .title h1 {
+        font-size: 30px;
+    }
+    .content-right .content-top {
+        font-size: 11.5px;
+        margin-bottom: 10px;
+        line-height: 1.2;
+        letter-spacing: 1px;
+    }
+    .content-right .content-bottom .title {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    .list .item p {
+        line-height: 1.5;
+        font-size: 12px;
+    }
+    .list .item img {
+        width: 5px;
+        margin-right: 10px;
+    }
+    .info-blog-left .button {
+        padding: 8px 10px 8px 20px;
+        height: 40px;
+        font-size: 10px;
+        border-radius: 13px;
+    }
+    .info-blog-left .button img {
+        margin: 0;
+        height: 15px !important;
+        width: 15px !important;
+    }
+
+    .info-blog-right .button {
+        padding: 8px 10px 8px 10px;
+        height: 40px;
+        font-size: 10px;
+        border-radius: 13px;
+        width: 190px;
+    }
+    .info-blog-right .button img {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    nav {
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    nav .navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px 30px;
+    }
+    .baniere {
+        height: 890px;
+        overflow: hidden;
+    }
+    .baniere .baniere-content {
+        top: 435px;
+        width: 400px;
+        left: 30px;
+    }
+    .baniere-content .baniere-title {
+        width: 80%;
+    }
+    .baniere-content .baniere-desc {
+        width: 100%;
+    }
+    .baniere img {
+        object-position: right;
+        margin: -265px -555px 0;
+        width: 1405px;
+        height: 1115px;
+    }
+    .branch-grid-content .branch-grid-item {
+        margin-right: 20px;
+    }
+    .branch-grid-item:first-child img {
+        height: 15px;
+    }
+    .branch-grid-item img {
+        height: 25px;
+    }
+    .content-right .content-top {
+        font-size: 11.5px;
+        margin-bottom: 10px;
+    }
+    .content-right .content-bottom .title {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .list .item p {
+        line-height: 2;
+    }
+    .number-for-africa .title h1 {
+        width: 300px;
+        font-size: 44px;
+        text-align: center;
+    }
+    .number-for-africa .content-row {
+        padding: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infos {
+        padding: 30px 0 60px;
+    }
+    .infos .info-title {
+        width: 70%;
+    }
+    .infos .info-blog {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .info-blog-left .button {
+        font-size: 12px;
+        height: 55px;
+        border-radius: 20px;
+        max-width: 272px;
+    }
+    .info-blog-left .buttons .button img {
+        height: 20px !important;
+        width: 20px !important;
+        margin: 0 0 0 20px;
+    }
+    .info-blog .info-blog-right .blog-desc {
+        font-size: 22px;
+    }
+    .info-blog-right .button {
+        font-size: 12px;
+        height: 55px;
+        border-radius: 20px;
+        max-width: 260px;
+        width: 260px;
+    }
+    .info-blog-right .buttons .button.white img {
+        height: 20px !important;
+        width: 20px !important;
+        margin: 0 0 0 20px;
+    }
+    .scholarships .about {
+        width: 100%;
+        gap: 30px;
+        padding: 60px 0;
+    }
+    .cursus {
+        padding: 60px 0px;
+    }
+    .cursus-content .content-left {
+        padding: 60px 30px;
+    }
+    .about .about-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .about .about-content:last-child {
+        flex-direction: column-reverse;
+    }
+    .about .about-content:last-child .about-box {
+        padding: 0px 30px;
+    }
+    .about .about-content .about-box-image {
+        width: 100%;
+        padding: 0;
+    }
+    .about .about-content .about-box {
+        padding: 0 30px;
+        width: 100% !important;
+    }
+    .scholarships .about-tooshare {
+        padding: 30px;
+    }
+    .about-tooshare .about-tooshare-desc {
+        max-width: 100%;
+    }
+    .about-tooshare .about-tooshare-image img {
+        width: 100%;
+    }
+    .footer-content .footer-content-top {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-content .footer-content-bottom .content-right {
+        flex-wrap: wrap;
+        column-gap: 140px;
+        row-gap: 20px;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .baniere .baniere-content {
+        width: 345px;
+        top: 390px;
+        left: 20px;
+    }
+    .baniere .button {
+        font-size: 12px;
+    }
+    .branch-grid {
+        padding: 10px;
+    }
+    .branch-grid-item img {
+        height: 20px;
+    }
+    .infos .info-title {
+        font-size: 30px;
+    }
+    .footer {
+        padding: 60px 30px;
+    }
+}
